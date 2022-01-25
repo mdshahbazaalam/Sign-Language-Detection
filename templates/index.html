@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>app</title>
+    <style>
+        #display{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #heading{
+            text-align: center;
+            color: rgb(27, 27, 195);
+        }
+        body{
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Sign Language Detection System</h1>
+
+    <div id="display">
+        <img src="{{url_for('video')}}" width=50%/>
+    </div>
+</body>
+</html>
